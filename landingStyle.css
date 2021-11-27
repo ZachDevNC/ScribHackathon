@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header: #66FCF1 */
+/* background: #1F2833 */
+/* darker background: #0B0C10; */
+
+body {
+  background-color: #0b0c10;
+}
+
+/* BACKGROUND DIAGONAL LINE */
+.diagonal-line {
+  position: relative;
+  background: #66fcf1;
+  transform: skewY(8deg);
+  z-index: -1;
+}
+
+.diagonal-line2 {
+  position: relative;
+  background: #66fcf1;
+  transform: skewY(-8deg);
+  z-index: -1;
+}
+
+.content {
+  margin-top: -180px;
+  height: 550px;
+  z-index: -1;
+}
+
+.content2 {
+  margin-top: -9px;
+  height: 1250px;
+  z-index: -1;
+}
+
+/* LOGO STACK */
+.mainHeader {
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  margin: -155px 0px 20px 0px;
+  z-index: 1;
+}
+
+.smallHeader {
+  position: relative;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #0b0c10;
+  z-index: 7;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  color: #c5c6c7;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* TOP PARAGRAPH */
+.introduction {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+/* FIRST ROW PARAGRAPH WITH COLOR PICKER IMAGE */
+.words {
+  font-family: "Quicksand", sans-serif;
+  color: #c5c6c7;
+  max-width: 1100px;
+  size: 20px;
+  line-height: 2;
+  text-align: center;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 190px 0px 190px;
+}
+
+.words1,
+.words2 {
+  font-family: "Quicksand", sans-serif;
+  color: #c5c6c7;
+  max-width: 600px;
+  size: 20px;
+  line-height: 2;
+}
+
+/* SECOND ROW PARAGRAPH WITH DUCK PIC */
+
+.words2 {
+  max-width: 500px;
+}
+
+.duckPic {
+  width: 550px;
+}
+
+/* VIDEO PLAYER */
+.media {
+  display: flex;
+  justify-content: center;
+  margin-top: -992px;
+  margin-bottom: 100px;
+}
+
+.video {
+  border-style: none;
+}
+
+/* BUTTON LINK TO APP PAGE STYLING */
+#footLink:hover,
+.buttonLink:hover {
+  background-color: #66fcf1;
+  color: #1f2833;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 50px;
+}
+
+.buttonLink,
+a {
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+.button {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #0b0c10;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #66fcf1;
+  padding: 17px 75px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 3px solid #0b0c10;
+  border-radius: 5px;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #0b0c10;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  z-index: -1;
+}
+
+.button:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.button:hover {
+  color: #66fcf1;
+  z-index: 1;
+}
+
+/* FOOTER CONTENT */
+
+.spencerImage {
+  height: 100px;
+  border-radius: 50%;
+  margin-right: -200px;
+}
+
+.zachImage {
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 150px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  align-items: center;
+  background: #0b0c10;
+  padding: 90px 0px 90px 0px;
+}
+
+.footerText {
+  align-items: center;
+  font-size: 20px;
+}
+
+#footLink1,
+#footLink2,
+#footLink3,
+#footLink4,
+#footLink5,
+#footLink6 {
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.footer1 {
+  margin-left: 120px;
+}
+
+.footer2 {
+  display: flex;
+  align-items: center;
+}
+
+#footLink6 {
+  margin-right: 100px;
+}
+
+/* SPENCERS NAMETAG */
+.nameTag {
+  font-family: "Quicksand", sans-serif;
+  color: #c5c6c7;
+  max-width: 1100px;
+  size: 20px;
+  line-height: 2;
+  text-align: center;
+  margin-left: -12px;
+}
+
+/* ZACHS NAMETAG */
+.nameTag2 {
+  font-family: "Quicksand", sans-serif;
+  color: #c5c6c7;
+  max-width: 1100px;
+  size: 20px;
+  line-height: 2;
+  text-align: center;
+  margin-right: -130px;
+}
+
+@media (max-width: 1280px) {
+  .row1, .row2 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .introduction {
+    max-width: 600px;
+  }
+}
